@@ -1,0 +1,48 @@
+
+1. Is it true that , system Bus is not connected to Flash memory??
+
+--> True, Check Embedded Flash memory interface in refernce manual
+
+2. Processor can fetch instructions from SRAM over i-code BUS T/F??
+--> False(There are advance technique from which we can do this).
+
+3. System Bus can operate at speed upto 180MHz??
+--> True
+
+4. SRAMs are connected to system BUS T/F?
+--> True , Check Block Diagram.
+
+5. APB1 BUS can operate at speed upto 180MHz?
+--> False, it can only run upto 45MHz.
+
+6.Let's say i have a peripheral whose datasheet says that, its operating frequency or speed must be above
+95MHz, can i connect that peripheral via APB2 BUS??
+--> APB2  BUS runs at max speed of 90 MHZ, Hence it is not possible.
+
+
+7. Processor can fetch instructions as well as simulaneously from SRAM T/F??
+--> FALSE,
+
+8. Processor can fetch instructions as well as simulaneously from FLASH T/F??
+--> True, cuz it has separate BUS called I_CODE and D_CODE
+
+9.What is the Max. HCLK(AHB1 BUS) clock value of your MCU??
+--> 180MHz 
+
+
+10. What is the MAX PCLK(APB1 BUS) value of your MCU?
+--> 90MHz
+ 
+11. GPIOs and processor communicate over AHB1  BUS T/F?
+--> TRUE
+
+12. USB OTG and processor communicate over AHB2 BUS T/F?
+--> TRUE
+
+13. USB OTG and GPIOs can communicate to processor simulaneously ??
+--> FALSE, both finally connects to system BUS. BUS matrix won't allow that.
+
+14. Processor can talk to flash memory and SRAM simulaneously ?
+--> TRUE, Both connects to different BUSes.
+
+IMP:: CHECK BUS MATRIX TO KNOWLEDGE OF CONNECTION BETWEEN MASTER AND SLAVE
